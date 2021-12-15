@@ -14,39 +14,45 @@
     <div>
         <h1>Calculadora JS</h1>
         <br>
+        <div class="display" id="display"></div>
+        <br>
         <table border="1">
 
             <tr>
-                <th colspan="4" class="display"></th>
+                <td><button id="tecla7">C</button></td>
+                <td><button class="tecla_CE" id="tecla8">CE</button></td>
+                <td><button class="tecla_voltar" id="tecla9"><<</button></td>
+                <td><button class="tecla_OnOff" id="operadorDivisao">ON / OFF</button></td>
             </tr>
             <tr>
-                <td><button>7</button></td>
-                <td><button>8</button></td>
-                <td><button>9</button></td>
-                <td><button>/</button></td>
+                <td><button id="tecla7">7</button></td>
+                <td><button id="tecla8">8</button></td>
+                <td><button id="tecla9">9</button></td>
+                <td><button id="operadorDivisao">/</button></td>
             </tr>
             <tr>
-                <td><button>4</button></td>
-                <td><button>5</button></td>
-                <td><button>6</button></td>
-                <td><button>x</button></td>
+                <td><button id="tecla4">4</button></td>
+                <td><button id="tecla5">5</button></td>
+                <td><button id="tecla6">6</button></td>
+                <td><button id="operadorMultiplicacao">x</button></td>
 
             </tr>
             <tr>
-                <td><button>1</button></td>
-                <td><button>2</button></td>
-                <td><button>3</button></td>
-                <td><button>-</button></td>
+                <td><button id="tecla1">1</button></td>
+                <td><button id="tecla2">2</button></td>
+                <td><button id="tecla3">3</button></td>
+                <td><button id="operadorSubtracao">-</button></td>
 
             </tr>
             </tr>
-                <td><button>0</button></td>
-                <td><button><strong>.</strong></button></td>
-                <td><button class="simbolo_igualdade">=</button></td>
-                <td><button>+</button></td>
+                <td><button><strong id="teclaPonto">.</strong></button></td>
+                <td><button id="tecla0">0</button></td>
+                <td><button class="simbolo_igualdade" id="igual">=</button></td>
+                <td><button id="operadorSoma">+</button></td>
             <tr>
         </table>
     </div>
+    <script src="script/calculadora_script.js"></script>
 </body>
 
 </html>

@@ -5,13 +5,13 @@ h1{
 body{
     justify-content: center;
     text-align: center; 
-    background-color: rgb(200, 230, 248);
+    background-color: rgb(212, 233, 247);
 }
 
 table{
     display: inline-flex;
     justify-content: center;
-    width: 34%;
+    width: 450px;
     background-color: rgb(80, 80, 80);
     border-color: rgb(85, 85, 85);
     border-radius: 6px;
@@ -19,6 +19,7 @@ table{
     border-radius: 20px;
     border: 6px;
     box-shadow: inset 10px 0 rgba(255,255,255,0.7), inset -10px 0 rgba(0,0,0,0.2);
+    max-width: 450px;
 }
 
 td{
@@ -46,7 +47,11 @@ button{
     margin-top: -3px;
     display: block;
     color: rgb(49, 49, 49);
+}
 
+button:hover{
+    background-color: #c0f1cc;
+    color: black;
 }
 
 .simbolo_igualdade{
@@ -56,16 +61,37 @@ button{
 }
 
 .display{
-    display: flex;
+    display: inline-block;
     justify-content: flex-end;
-    width: 350%;
+    width: 350px;
     height: 50px;
     margin-top: 9px;
     margin-bottom: 10px;
-    padding: 13px;
+    /* padding: 13px; */
     background-color: rgb(241, 237, 237);
     color: rgb(58, 56, 56);
-    /* font: normal 4rem serif; */
+    font: normal 2rem serif;
     border-radius: 5px;
-    box-shadow: inset 0 2px rgb(231, 231, 231), inset 0 -4px rgba(73, 73, 73, 0.2);
+    box-shadow: inset 0 2px rgb(245, 243, 243), inset 0 -4px rgba(73, 73, 73, 0.2);
+    max-width: 550%;
+    max-height: 50px;
+    overflow: scroll;
+}
+
+.tecla_CE {
+    padding: 12px;
+    height: 40px;
+}
+
+.tecla_voltar {
+    padding: 13px;
+    height: 40px;
+}
+
+.tecla_OnOff {
+    padding: 3px;
+    height: 40px;
+    background-color: rgb(233, 79, 79);
+    box-shadow: inset 0 2px rgb(245, 150, 150), inset 0 -4px rgba(238, 128, 128, 0.2);
+    color: rgb(214, 210, 210);
 }
