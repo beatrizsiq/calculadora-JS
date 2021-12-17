@@ -97,7 +97,7 @@ const mapaTeclado = {
     '='         : 'igual',
     ','         : 'decimal',
     'Enter'     : 'igual',
-    'BackSpace' : 'backspace',
+    'Backspace' : 'backspace',
     'c'         : 'limparDisplay',
     'Escape'    : 'limparCalculo'
 }
