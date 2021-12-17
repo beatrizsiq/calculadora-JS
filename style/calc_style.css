@@ -37,8 +37,8 @@ th, td {
 button{
     height: 30px;
     padding: 19px;
-    background-color: rgb(227, 233, 222);
-    border-color: rgb(203, 204, 203);
+    background-color: rgb(234, 236, 232);
+    border-color: rgb(232, 235, 232);
     border-radius:6px;
     box-shadow: inset 0 2px rgb(231, 231, 231), inset 0 -4px rgba(73, 73, 73, 0.2);
     font-size: 20px;
@@ -54,7 +54,7 @@ button:hover{
     color: black;
 }
 
-.simbolo_igualdade{
+.igual{
     background-color: rgb(233, 79, 79);
     box-shadow: inset 0 2px rgb(245, 150, 150), inset 0 -4px rgba(238, 128, 128, 0.2);
     color: white;
@@ -64,31 +64,53 @@ button:hover{
     display: inline-block;
     justify-content: flex-end;
     width: 350px;
-    height: 50px;
+    height: 60px;
     margin-top: 9px;
     margin-bottom: 10px;
-    /* padding: 13px; */
     background-color: rgb(241, 237, 237);
     color: rgb(58, 56, 56);
     font: normal 2rem serif;
     border-radius: 5px;
     box-shadow: inset 0 2px rgb(245, 243, 243), inset 0 -4px rgba(73, 73, 73, 0.2);
-    max-width: 550%;
     max-height: 50px;
     overflow: scroll;
+    text-align: right;
 }
 
-.tecla_CE {
+::-webkit-scrollbar {
+    width: 3px;
+}
+  
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 25px;
+    background-color: rgb(241, 237, 237); 
+}
+
+::-webkit-scrollbar-corner{
+    border-radius: 25px;
+}
+
+.back_display{
+    display: inline-flex;
+    justify-content: center;
+    width: 450px;
+    background-color: rgb(80, 80, 80);
+    border-color: rgb(85, 85, 85);
+    border-radius: 20px;
+    box-shadow: inset 10px 0 rgba(255,255,255,0.7), inset -10px 0 rgba(0,0,0,0.2);
+}
+.limparDisplay {
     padding: 12px;
     height: 40px;
 }
 
-.tecla_voltar {
+.backspace {
     padding: 13px;
     height: 40px;
 }
 
-.tecla_OnOff {
+.OnOff {
     padding: 3px;
     height: 40px;
     background-color: rgb(233, 79, 79);

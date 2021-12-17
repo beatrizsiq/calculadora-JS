@@ -1,0 +1,67 @@
+'use strict';
+
+const display =document.getElementById('display');
+
+const numeros = document.querySelectorAll('[id *= tecla]'); //seleciona os id que contém "tecla" no nome
+const operadores = document.querySelectorAll('[id *= operador]');
+
+let novoNumero = true;
+let operador;
+let numeroAterior;
+
+const atualizarDisplay = (texto) =>{
+    if (novoNumero){
+        display.textContent = texto;    // se for novo numero: irá limpar a tela
+        novoNumero = false;
+    }
+    else{
+        display.textContent += texto; // se nao: irá concatenar
+    }
+}
+
+const inserirNumero = (evento) => atualizarDisplay(evento.target.textContent);
+
+//var recebera um evento que ocorrera no display.textcontent que recebe o evento que aponta para o texto
+
+ //"varre" os elementos de um array (nodeList (ver no devTools))
+numeros.forEach(numero => numero.addEventListener('click', inserirNumero)); //adicionar a cada numero um evento, evento click e mandar p outra callback inserirNumero
+
+const operacaoPendente = () => operador != undefined; //verificar se o operador está vazio 
+
+const calcular = () =>{
+    if (operacaoPendente()){ //irá verificar se há uma operação pendendte
+        const numeroAtual = parseFloat( display.textContent); // nova variavel que pega o valor que está no display
+        novoNumero = true; // o resultado passa a ser um novo numero irá substituir
+        const resultado = eval (`${numeroAnterior} ${operador} ${numeroAtual}`);
+        atualizarDisplay(resultado);
+
+        // funcao utilizando eval substitui todos os IF's abaixo
+        // if(operador == '+'){
+        //     atualizarDisplay(numeroAnterior + numeroAtual);
+        // }
+        // else if (operador == '-'){
+        //     atualizarDisplay(numeroAnterior - numeroAtual);
+        // }
+        // else if (operador == '*'){
+        //     atualizarDisplay(numeroAnterior * numeroAtual);
+        // }
+        // else if (operador == '/'){
+        //     atualizarDisplay(numeroAnterior / numeroAtual);
+        // }
+    }
+}
+
+
+const selecionarOperador = (evento) =>{
+    if(!novoNumero){
+        calcular();
+        novoNumero = true;
+        operador = evento.target.textContent; //guarda o operador
+        numeroAterior = display.textContent;
+        console.log(operador);
+    }
+
+}
+operadores.forEach(operador => operador.addEventListener('click', selecionarOperador));
+
+
