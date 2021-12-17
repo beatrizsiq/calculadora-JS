@@ -11,47 +11,36 @@
 </head>
 
 <body>
-    <div>
-        <!-- <h1>Calculadora JS</h1> -->
-        <br>
-        
-        <div class="back_display"><div class="display" id="display"></div></div>
-        <br>
-        <table border="1">
+    <div class="calculadora">
+        <br>        
+        <div class="back_display"><div class="display" id="display"></div></div>        <br>
+        <div class="calculadora_buttons">
+            <button id="limparCalculo">C</button>
+            <button class="tecla-limparDisplay" id="limparDisplay">CE</button>
+            <button class="tecla-backspace" id="backspace"><<</button>
+            <button class="tecla-OnOff" id="OnOff">ON / OFF</button>
+    
+            <button id="tecla7">7</button>
+            <button id="tecla8">8</button>
+            <button id="tecla9">9</button>
+            <button id="operadorDivisao">/</button>
+    
+            <button id="tecla4">4</button>
+            <button id="tecla5">5</button>
+            <button id="tecla6">6</button>
+            <button id="operadorMultiplicacao">*</button>
+    
+            <button id="tecla1">1</button>
+            <button id="tecla2">2</button>
+            <button id="tecla3">3</button>
+            <button id="operadorSubtracao">-</button>
+    
+            <button><strong id="decimal">,</strong></button>
+            <button id="tecla0">0</button>
+            <button class="tecla-igual" id="igual">=</button>
+            <button id="operadorSoma">+</button>
+        </div>
 
-            <tr>
-                <td><button id="limparCalculo">C</button></td>
-                <td><button class="limparDisplay" id="limparDisplay">CE</button></td>
-                <td><button class="backspace" id="backspace"><<</button></td>
-                <td><button class="OnOff" id="OnOff">ON / OFF</button></td>
-            </tr>
-            <tr>
-                <td><button id="tecla7">7</button></td>
-                <td><button id="tecla8">8</button></td>
-                <td><button id="tecla9">9</button></td>
-                <td><button id="operadorDivisao">/</button></td>
-            </tr>
-            <tr>
-                <td><button id="tecla4">4</button></td>
-                <td><button id="tecla5">5</button></td>
-                <td><button id="tecla6">6</button></td>
-                <td><button id="operadorMultiplicacao">*</button></td>
-
-            </tr>
-            <tr>
-                <td><button id="tecla1">1</button></td>
-                <td><button id="tecla2">2</button></td>
-                <td><button id="tecla3">3</button></td>
-                <td><button id="operadorSubtracao">-</button></td>
-
-            </tr>
-            </tr>
-                <td><button><strong id="decimal">,</strong></button></td>
-                <td><button id="tecla0">0</button></td>
-                <td><button class="igual" id="igual">=</button></td>
-                <td><button id="operadorSoma">+</button></td>
-            <tr>
-        </table>
     </div>
     <script src="script/calculadora_script.js"></script>
 </body>
